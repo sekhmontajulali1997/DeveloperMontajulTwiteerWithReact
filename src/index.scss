@@ -1,0 +1,32 @@
+:root{
+    --tw--Primary--color: #E7E9EA;
+    --tw--secondary--color: #1D9BF0;
+    --tw--backGround--color: black;
+    --tw--font: Poppins;
+    --tw--p--color: rgb(113, 118, 123);
+    
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body{
+        background-color: black;
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+span{
+    display: inline-block;
+}

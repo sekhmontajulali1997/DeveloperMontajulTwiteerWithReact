@@ -1,0 +1,40 @@
+.ModelArea {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(36, 45, 52, 0.8), rgb(36, 45, 52, 0.8));
+  position: fixed;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ModelContent {
+    width: 781px;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 10px;
+
+
+    .ModelHeader{
+        .ModelCloseButton{
+            display: flex;
+            gap: 40px;
+            svg{
+                color: white;
+                font-size: 25px;
+            }
+           
+            h2{
+                color: white;
+                font-size: 20px;
+                font-family: var(--tw--font);
+            }
+
+        }
+        .HeaderText{
+            color: white;
+        }
+      
+    }
+  }
+}

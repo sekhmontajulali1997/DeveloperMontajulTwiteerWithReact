@@ -1,0 +1,155 @@
+.PrentDiv {
+ 
+
+  .contentArea {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    padding-top: 90px;
+    grid-template-columns: 35% 65%;
+
+    /*LeftContent Area  */
+
+    .LeftContent {
+      display: grid;
+      justify-content: end;
+      align-items: center;
+      .logoSection {
+        img {
+          max-width: 300px;
+        }
+      }
+    }
+
+    /*RightContent Area  */
+
+    .RightContent {
+      display: grid;
+      justify-self: end;
+
+      .headingTop {
+        color: var(--tw--Primary--color);
+        font-size: 35px;
+        font-weight: 700;
+        font-family: var(--tw--font);
+        margin-bottom: 15px;
+      }
+      .headingTwo {
+        @extend .headingTop;
+
+        font-size: 20px;
+
+        margin: 30px 0;
+      }
+
+      .buttonSection {
+        display: grid;
+        gap: 10px;
+        a {
+          svg {
+            transform: translate(-5px, 5px);
+            font-size: 20px;
+          }
+          background-color: #fff;
+          width: 300px;
+          padding: 10px 0px;
+          border-radius: 50px;
+          text-align: center;
+          font-weight: 400;
+          color: #3c4043;
+          font-family: var(--tw--font);
+        }
+        .buttonTwo {
+          a {
+            color: black;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .orSection {
+        margin: 10px 0;
+        hr {
+          display: inline-block;
+          width: 120px;
+          height: 1px;
+          transform: translate(0px, -3px);
+          color: rgba(0, 0, 0, 0);
+          background-color: black;
+          border: 1px solid #171717;
+        }
+        span {
+          color: #fff;
+          margin: 0px 20px;
+        }
+      }
+
+      .createAccountButton {
+        @extend .buttonSection;
+        a {
+          color: #fff;
+          background-color: var(--tw--secondary--color);
+        }
+      }
+      .termsSection {
+        width: 340px;
+        margin: 10px 0px;
+        p {
+          color: var(--tw--p--color);
+          font-family: var(--tw--font);
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 16px;
+          a {
+            color: var(--tw--secondary--color);
+          }
+        }
+      }
+
+      .SignInSection {
+        margin: 40px 0px;
+        @extend .buttonSection;
+        h1 {
+          font-family: var(--tw--font);
+          color: #fff;
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        a {
+          background-color: transparent;
+          color: var(--tw--secondary--color);
+          border: 1px solid rgb(83, 100, 113);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .FooterArea {
+    max-width: 95%;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+
+      li {
+        a {
+          color: var(--tw--p--color);
+          font-family: var(--tw--font);
+          font-size: 12px;
+        }
+      }
+    }
+    p {
+      padding-top:5px ;
+      padding-bottom: 10px;
+      text-align: center;
+      color: var(--tw--p--color);
+      font-family: var(--tw--font);
+      font-size: 12px;
+      a{
+        color: var(--tw--p--color);
+      }
+    }
+  }
+}

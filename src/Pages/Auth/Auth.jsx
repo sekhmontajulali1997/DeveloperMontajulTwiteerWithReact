@@ -12,7 +12,58 @@ const Auth = () => {
   return (
     <>
 
-    {model && (<Model hide={setModel}/>) }
+    {model && (<Model hide={setModel} >
+      
+      <span>Step 1 of 5</span>
+          <h2>Create your account</h2>
+          <form action="">
+
+            <div className="InputArea">
+            <input type="text" placeholder="Name"/>
+            <input type="text" placeholder="Phone" />
+            </div>
+
+            <div className="UseEmailSectiov">
+              <Link to={'#'}>Use email instead</Link>
+            </div>
+
+
+
+            <div className="DOBsection">
+              <strong>Date of birth</strong>
+              <p>This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+
+
+              <div className="SelectBoxSection">
+
+                <select name="" id="">
+
+                  <option value="">Month</option>
+                  
+                </select>
+                <select name="" id="">
+
+                  <option value="">Day</option>
+                  
+                </select>
+                <select name="" id="">
+
+                  <option value="">Year</option>
+                  
+                </select>
+
+
+
+          
+              </div>
+
+            </div>
+            <div className="subbutton">
+              <button>Next</button>
+            </div>
+          </form>
+       
+         </Model>) }
 
     
       <MetaTag title={" X. It's What's happening / X"} />
@@ -145,9 +196,6 @@ const Auth = () => {
 export default Auth;
 /**
  * 
- * <Model hide={setModel}  title="Create your account"> <p style={{color: 'white'}}>
-  
-    loejfiefigrhfhhrhrhrhrhrhrhfvrtvrtrgtrgetrgfege</p> </Model>
  */
 
 // onClick={() => (setModel(true))}

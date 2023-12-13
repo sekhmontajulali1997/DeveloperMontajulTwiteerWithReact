@@ -1,40 +1,131 @@
-.ModelArea {
+
+.ModalArea {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgb(36, 45, 52, 0.8), rgb(36, 45, 52, 0.8));
+  background-image: linear-gradient(rgb(36,45,52, 0.8), rgb(36,45,52, 0.8));
   position: fixed;
-  z-index: 999999;
-  display: flex;
+  z-index: 999;
+  display: grid;
   justify-content: center;
   align-items: center;
-  .ModelContent {
-    width: 781px;
-    padding: 10px;
+
+  .ModalContainer {
     background-color: black;
-    border: 1px solid red;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    max-width: 684px;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
 
-
-    .ModelHeader{
-        .ModelCloseButton{
-            display: flex;
-            gap: 40px;
-            svg{
-                color: white;
-                font-size: 25px;
-            }
-           
-            h2{
-                color: white;
-                font-size: 20px;
-                font-family: var(--tw--font);
-            }
-
+    .ModalLeft {
+      .ModalClose {
+        cursor: pointer;
+        svg {
+          color: white;
+          font-size: 20px;
         }
-        .HeaderText{
-            color: white;
+      }
+    }
+    .ModalCenter {
+      span {
+        font-family: var(--tw--font);
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 30px;
+        transform: translate(0px, -5px);
+      }
+      h2 {
+        @extend span;
+        font-size: 30px;
+      }
+      form {
+        .InputArea {
+          input {
+            position: relative;
+            width: 100%;
+            padding: 15px 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            border: 1px solid #6568686d;
+            font-size: 16px;
+            color: #fff;
+
+            &:focus {
+              outline: 2px solid rgb(29, 155, 240);
+              border: 1px solid transparent;
+              font-size: 13px;
+            }
+          }
         }
-      
+
+        .UseEmailSectiov {
+          margin-bottom: 10px;
+          text-align: end;
+          a {
+            font-family: var(--tw--font);
+            color: rgb(29, 155, 240);
+            font-weight: 300;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .DOBsection {
+          strong {
+            display: inline-block;
+            color: #fff;
+            font-family: var(--tw--font);
+            font-weight: 500;
+            font-size: 13px;
+            margin: 8px 0px;
+          }
+          p {
+            font-family: var(--tw--font);
+            color: var(--tw--p--color);
+            font-size: 12px;
+            line-height: 13px;
+          }
+          .SelectBoxSection {
+            margin: 20px 0px;
+            display: grid;
+            grid-template-columns: 50% 20% 26%;
+            gap: 10px;
+            select {
+              padding: 15px 10px;
+              background-color: transparent;
+              color: var(--tw--p--color);
+              border-radius: 5px;
+              border: 1px solid #6568686d;
+
+              &:focus {
+                outline: 2px solid rgb(29, 155, 240);
+                border: 1px solid transparent;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+
+        .subbutton {
+        margin: 80px 0px 5px 0px;
+          button {
+            width: 100%;
+            color: black;
+            font-size: 20px;
+            border-radius: 50px;
+            border: 1px solid #6568686d;
+            background-color: #787A7A;
+            font-weight: 500;
+            padding: 12px 10px;
+         
+            
+          }
+        }
+      }
+    }
+    .ModalRight {
     }
   }
 }

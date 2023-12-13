@@ -30,3 +30,6 @@ a{
 span{
     display: inline-block;
 }
+input:focus{
+    outline: none;
+}
